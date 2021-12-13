@@ -1,0 +1,17 @@
+repeat wait() until game.Players.LocalPlayer and 
+game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Name
+wait(0.5)
+EarthAuto = false
+
+local Earth = 536102540
+local Queue = 3565304751
+
+while wait() do
+  if game.Workspace.Live["Broly BR"].Humanoid.Health <= 1 then
+  if EarthAuto == true then
+        game:GetService('TeleportService'):Teleport(Earth, LocalPlayer)
+    elseif EarthAuto == false then
+        game:GetService('TeleportService'):Teleport(Queue, LocalPlayer)
+        end
+    end
+end
